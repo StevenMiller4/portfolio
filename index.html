@@ -3,8 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Steven's Portfolio</title>
+        <title>Steven Miller | Web Developer | Portfolio</title>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
         <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
 
@@ -12,17 +14,25 @@
 
         <header>
             <h1>Steven Miller</h1>
+            <nav>
+                <ul id="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </header>
 
         <main>
             <div class="wrapper">
-                <article id="home">
-                    <div class='group'>
-                        <div class='item'>
+                <section id="home">
+                    <div class="group">
+                        <div class="item">
                             <img src="images/home/profile-photo.png" alt="Steven Miller Profile Photo" class="image-style">
                         </div>
-                        <div class='item'>
-                            <p class="intro">Hello, my name is Steven Miller!</p>
+                        <div class="item-double">
+                            <p class="intro">Hi, I'm Steven Miller!</p>
                             <p>I'm a 28 year old aspiring Web Developer who also works as a barista at Starbucks Coffee Company in San Diego, California.
                                 Although I have spent much of my adult life working in the food and retail industry, I have since been inspired to pursue 
                                 a career in programming. Through my studies at Thinkful, I hope to realize my dream to become a part of a team of passionate
@@ -36,14 +46,12 @@
                             </p>
                         </div>
                     </div>
-                </article>
-            </div>
+                </section>
 
-            <article id="about">
-                <div class="wrapper">
+                <section id="about">
                     <h2>About Me</h2>
-                    <div class='group'>
-                        <div class='item-double'>
+                    <div class="group">
+                        <div class="item item-double">
                             <p>A large part of my decision and drive to become a Web Developer comes from the realization that I truly enjoy the methodical thought 
                                 process of conceiving a solution to problems others might have. I know that over time, as my knowledge of languages grow, I will have
                                 more tools at my disposal to translate desire into functionality. Ultimately, I hope that one day I may learn from and work with a team
@@ -63,52 +71,63 @@
                                 <li>CSS</li>
                             </ul>
                         </div>
-                        <div class='item'>
+                        <div class="item">
                             <img src="images/about/twitch-logo.JPG" alt="Twitch Logo" class="rounded">
                         </div>
                     </div>
-                </div>
-            </article>
+                </section>
 
-            <div class="wrapper">
-                <article id="portfolio">
+                <section id="portfolio">
                     <h2>Portfolio</h2>
-                    <div class='group'>
-                        <div class='item'>
+                    <div class="group">
+                        <div class="item">
                             <h3>Placeholder 1</h3>
                             <p>This is a placeholder text for the first project linked to my portfolio.</p>
                         </div>
-                        <div class='item'>
+                        <div class="item">
                             <h3>Placeholder 2</h3>
                             <p>This is a placeholder text for the first project linked to my portfolio.</p>
                         </div>
                     </div>
-                    <div class='group'>
-                        <div class='item'>
+                    <div class="group">
+                        <div class="item">
                             <h3>Placeholder 3</h3>
                             <p>This is a placeholder text for the first project linked to my portfolio.</p>
                         </div>
-                        <div class='item'>
+                        <div class="item">
                             <h3>Placeholder 4</h3>
                             <p>This is a placeholder text for the first project linked to my portfolio.</p>
                         </div>
                     </div>
-                </article>
+                </section>
 
-                <article id="contact">
+                <section id="contact">
                     <h2>Contact</h2>
-                    <div class='group'>
-                        <div class='item'>
+                    <div class="group">
+                        <div class="item">
+                            <form action="https://formspree.io/f/xknpaddr" method="POST">
+                                <label for="user-name">Name:</label>
+                                <input id="user-name" type="text" name="name" placeholder="Enter your name here">
+
+                                <label for="user-email">Email:</label>
+                                <input id="user-email" type="text" name="_replyto" placeholder="Your email address here">
+
+                                <label for="user-message">Message:</label>
+                                <textarea id="user-message" name="message" placeholder="And whatever you would like to say here"></textarea>
+                                <button type="submit" value="Send">Submit</button>
+                            </form>
+                        </div>
+                        <div class="item item-double">
                             <p>You can contact me here:</p>
-                            <ol>
-                                <li>Email: steven.miller114@gmail.com</li>
-                                <li><a href="https://github.com/StevenMiller4">GitHub</a> Profile</li>
-                                <li><a href="https://www.linkedin.com/in/steven-miller-0477bb1a5/">LinkedIn</a> Profile</li>
-                                <li><a href="https://www.twitch.tv/xc4oud">Twitch</a> Stream</li>
-                            </ol>
+                                <ol>
+                                    <li><a href="https://github.com/StevenMiller4">GitHub</a> Profile</li>
+                                    <li><a href="https://www.linkedin.com/in/steven-miller-0477bb1a5/">LinkedIn</a> Profile</li>
+                                    <li><a href="https://www.twitch.tv/xc4oud">Twitch</a> Stream</li>
+                                    <li><-- Email me here!</li>
+                                </ol>
                         </div>
                     </div>
-                </article>
+                </section>
             </div>
         </main>
 
@@ -117,8 +136,6 @@
             <p>February 2021</p>
         </footer>
 
-        <script src="script.js">
-        </script>
+        <script src="script.js"></script>
     </body>
-
 </html>
