@@ -1,6 +1,6 @@
 # Portfolio
 
-This portfolio project includes many of the same elements as my webpage project with a few key differences: I utilize flexbox and will continue to add new features to it as I progress through my thinkful course. I will also update this portfolio with apps that I create as time goes on. 
+This is a portfolio page I have created to show a little about myself and the projects I have been working on. It will be updated as time goes on and I can add more projects to collection.
 
 ## About the Creator
 
