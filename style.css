@@ -1,3 +1,101 @@
+/* General settings for entire page */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Stylized values for the header and h1 sections */
+
+header {
+    background-color: #283044;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+header h1 {
+    font-family: 'Lucida Console', serif;
+    font-size: 56px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    color: #fdfdff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Customization for the nav and anchor links, as well as adaptations for larger screens */
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-top: 75px;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    font-family: Futura, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #fdfdff;
+    text-decoration: none;
+    padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+    color: #ebf5ee;
+}
+
+@media all and (min-width: 700px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h1 {
+        margin: 14px 0 14px 20px;
+        padding-top: 0;
+        font-size: 42px;
+    }
+
+    header nav {
+        margin-top: 14px;
+    }
+}
+
+/* Img values for both profile photo and twitch logo */
+
+img {
+    width: 100%;
+    border: 5px groove #78a1bb;
+    border-radius: 50%;
+}
+
+img.rounded {
+    border-radius: 8px;
+}
+
+/* Customization for the body content */
+
+body {
+    margin: 0;
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
 /* Stylization choices for the headers in the body */ 
 
 main .intro {
