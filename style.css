@@ -1,70 +1,68 @@
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
+/* Stylization choices for the headers in the body */ 
 
-img {
-    width: 100%;
-}
-
-img.rounded {
-    border-radius: 8px;
+main .intro {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    color: #8b786d;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
 main h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 28px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 400;
+    color: #8b786d;
+    font-weight: 850;
+    letter-spacing: 2px;
 }
 
 main h3 {
-    font-size: 22px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Futura, sans-serif;
+    font-size: 24px;
+    color: #000;
     font-weight: 400;
+    letter-spacing: 1px;
 }
+
+/* Customization for the main p and contact p */
 
 main p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'RocknRoll One', sans-serif;
     line-height: 1.5em;
     margin-bottom: 0em;
+    padding: 1rem;
 }
 
-header {
-    background-color: #EBF5EE;
-    margin-bottom: 40px;
-    display: block;
-}
-
-header h1 {
-    color: #283044;
-    text-align: center;
-    margin: 0;
-    padding: 20px 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 56px;
-}
-
-main .wrapper h2 {
-    padding-left: 10px;
-    margin-bottom: 0;
-}
-
-main .intro {
+#contact p {
+    font-family: 'RocknRoll One', sans-serif;
     font-size: 24px;
-    color: #8B786D;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
+
+/* Footer stylization */
 
 footer {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     margin: 0;
     padding: 20px 0;
     font-size: 12px;
 }
 
+
+/* Wrapper customization */
+
 .wrapper {
     width: 100%;
 }
+
+main .wrapper {
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+/* Customization for group, item, and item-double */
 
 .group {
     display: flex;
@@ -81,6 +79,20 @@ footer {
     margin: 10px;
 }
 
+/* Customization for specific sections or groups of sections */
+
+#home, #portfolio, #contact {
+    margin-bottom: 120px;
+}
+
+#about, #contact {
+    background-color: #ebf5ee;
+    padding: 20px 0 30px 0;
+    margin: 120px 0;
+}
+
+/* Media Query for desktop */
+
 @media all and (min-width: 800px) {
     .wrapper {
         width: 80%;
@@ -92,12 +104,22 @@ footer {
     }
 }
 
-#home, #portfolio, #contact {
-    margin-bottom: 120px;
+/* Contact Form Design */
+
+form {
+    padding-right: 6px;
 }
 
-#about {
-    background-color: #78A1BB;
-    padding: 20px 0 30px 0;
-    margin: 120px 0;
+form label {
+    display: block;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form textarea {
+    height: 160px;
 }
